@@ -22,7 +22,7 @@ def sales_management(names, records):
         if avg > 5:
             print(f'보너스 대상자 {name}')
 
-    for name, avg in members_inorder[-1:]:
+    for name, avg in members_inorder[-2:]:
         if avg <= 3:
             print(f'\n면담 대상자 {name}')
 
