@@ -12,8 +12,9 @@ member_records = [
 
 def sales_management(names, records):
     members = dict()
-    for name in names:
-        record = records[names.index(name)]
+    for idx in range(len(names)):
+        name = names[idx]
+        record = records[idx]
         members[name] = sum(record) / len(record)
 
     members_inorder = sorted(members.items(), key=lambda x: -x[1])
